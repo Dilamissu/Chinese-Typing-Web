@@ -1,0 +1,35 @@
+#correct-typed-word{
+    color: gray;
+}
+#incorrect-typed-word{
+    color:tomato
+}
+#word-to-type{
+    color: black;
+}
+
+
+#input-field{
+    /* box size is one bopomofo */
+    opacity: 0;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+
+#cursor {
+    /* display: inline-block; 讓游標在文本中排列 */
+    width: 1px; /* 游標寬度 */
+    height: 1.2em; /* 游標高度 */
+    background-color: black; /* 游標顏色 */
+    animation: blink 1s step-start 0s infinite; /* 游標閃爍動畫 */
+    top: 0; /* 垂直對齊 */
+    left: 100%; /* 將游標置於文本的右側 */
+    margin-left: 2px; /* 游標與文字之間的間隔 */
+}

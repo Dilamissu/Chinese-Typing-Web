@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zn-TW">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+        <title>中打練習</title>
+    </head>
+    <body>
+
+        <div id="root"></div>
+        <script src="script/index.js"></script>
+
+        <div align="center">
+            <h1>中打練習</h1>
+
+            <span id="correct-typed-word"></span>
+            <span id="incorrect-typed-word"></span>
+            <span id="cursor">|</span>
+            <b id="word-to-type"></b><br>
+
+            <input id="input-field" type="text" oninput="checkInput()" onkeydown="handleKeydown(event)" placeholder=""/>
+        </div>
+    </body>
+</html>
